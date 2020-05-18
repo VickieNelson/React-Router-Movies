@@ -15,14 +15,15 @@ const MovieList = (props) => {
 
 function MovieDetails({ movie }) {
   const { title, director, metascore, stars } = movie;
+
+  // Movie card should be a Link that 1) direct the user to the /movies/{id of movie here} URL, 2)where :id is the id of the individual movie.
+
+  //when user clicks card they should be taken to /movies/{id of movie} to see details
+  //modify LIne 13 in Movie.js to accept the correct id of selected movie
+  // add functionality of home button on SavedList to navigate home
+
+  // add 'Link to = {}
   return (
-    // Movie card should be a Link that 1) direct the user to the /movies/{id of movie here} URL, 2)where :id is the id of the individual movie.
-
-    //when user clicks card they should be taken to /movies/{id of movie} to see details
-    //modify LIne 13 in Movie.js to accept the correct id of selected movie
-    // add functionality of home button on SavedList to navigate home
-
-    // add 'Link to = {}
     <Link to={`/movies/${movie.id}`}>
       <div className='movie-card'>
         <h2>{title}</h2>

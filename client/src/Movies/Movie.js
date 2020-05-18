@@ -5,14 +5,14 @@ import { useParams } from "react-router-dom";
 
 const Movie = (props) => {
   const [movie, setMovie] = useState();
-  console.log("props are at top,props");
+  console.log("props are at top", props);
 
   // create new variables
 
   const params = useParams();
 
   useEffect(() => {
-    const id = 1;
+    // const id = 1;
     // change ^^^ that line and grab the id from the URL
     // You will NEED to add a dependency array to this effect hook
 

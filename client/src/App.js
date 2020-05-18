@@ -1,7 +1,7 @@
 //import React items
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { Route, Switch } from "react-router-dom";
 
 //import files
@@ -29,10 +29,6 @@ const App = () => {
     };
     getMovies();
   }, []);
-
-  const addToSavedList = (movie) => {
-    setSavedList([...savedList, movie]);
-  };
 
   return (
     <div>
